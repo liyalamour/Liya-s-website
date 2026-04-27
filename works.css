@@ -78,9 +78,9 @@
   pointer-events: none;
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.96) 0%,
-    rgba(0, 0, 0, 0.82) 28%,
-    rgba(0, 0, 0, 0.52) 52%,
+    rgba(0, 0, 0, 0.86) 0%,
+    rgba(0, 0, 0, 0.7) 28%,
+    rgba(0, 0, 0, 0.4) 52%,
     rgba(0, 0, 0, 0) 100%
   );
 }
