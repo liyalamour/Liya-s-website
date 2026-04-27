@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agoda Maps - App — Liya</title>
+    <title>Maps — App — Liya</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,25 +55,34 @@
       <a class="case-study__back" href="../works.html">Back to selected work</a>
 
       <div class="case-study__intro">
-        <h1 class="case-study__title">Agoda Maps - App</h1>
+        <h1 class="case-study__title">Maps — App</h1>
         <p class="case-study__lead">
-          Short summary of the problem, your role, and the outcome. Replace this
-          paragraph with your own one- to two-sentence project pitch.
+          Native map search is where travelers turn geography into decisions:
+          which neighborhood, which distance to a landmark, which price at a
+          glance. This program tightened discovery, pin and card behavior, and
+          filtering so the map felt trustworthy and fast—not a decorative layer on
+          top of list search.
         </p>
       </div>
 
       <ul class="case-study__meta">
         <li class="case-study__meta-item">
           <span class="case-study__meta-label">Role</span>
-          <p class="case-study__meta-value">Your role (e.g. Lead product designer)</p>
+          <p class="case-study__meta-value">Sr. Product Designer</p>
         </li>
         <li class="case-study__meta-item">
           <span class="case-study__meta-label">Focus</span>
-          <p class="case-study__meta-value">Team, product area, or scope</p>
+          <p class="case-study__meta-value">
+            Maps on iOS and Android — discovery, pins and cards, filters,
+            contrast and motion in map-led hotel search
+          </p>
         </li>
         <li class="case-study__meta-item">
           <span class="case-study__meta-label">Timeline</span>
-          <p class="case-study__meta-value">e.g. 2024 — 2025</p>
+          <p class="case-study__meta-value">
+            Program centered on the 2017-era maps experience; iterative research,
+            hypothesis-driven design, and ship cycles with product and engineering
+          </p>
         </li>
       </ul>
 
@@ -89,82 +98,447 @@
       </div>
 
       <div class="case-study__content">
-        <section class="case-study__section" aria-labelledby="cs-context">
-          <h2 id="cs-context">Context</h2>
+        <section class="case-study__section" aria-labelledby="maps-context">
+          <h2 id="maps-context">Context</h2>
           <p>
-            Describe the business and user context: who this was for, what was
-            not working, and why the work mattered. Replace with your narrative.
+            On mobile, the map is a high-intent surface: people scan clusters of
+            pins, open cards for a subset of properties, and expect filters,
+            sorting, and pricing to stay coherent as they pan and zoom. When map
+            UI, density, and affordances drift from list search—or from each
+            other—travelers hesitate, and the product loses the “one mental model”
+            advantage of map-first discovery.
           </p>
-        </section>
-
-        <section class="case-study__section" aria-labelledby="cs-approach">
-          <h2 id="cs-approach">Approach</h2>
           <p>
-            How you framed the problem, who you partnered with, and how you
-            moved from insight to solution. Add bullets or subsections as needed.
+            The work sat alongside PMs and engineers responsible for inventory,
+            pricing, and performance; design had to make spatial search legible
+            without overwhelming small screens or hiding critical trade-offs
+            (distance, price, availability).
           </p>
-          <ul>
-            <li>Research or discovery highlight</li>
-            <li>Design exploration or principle</li>
-            <li>Validation or rollout note</li>
-          </ul>
         </section>
 
         <figure class="case-study__figure">
           <img
-            src="../assets/work/agoda-maps-app/gallery-01.jpg"
-            alt=""
+            src="../assets/work/agoda-maps-app/Maps-2017-all.png"
+            alt="2017-era Agoda map experience: multiple map-related states and patterns"
             width="1200"
             height="800"
             loading="lazy"
             decoding="async"
           />
           <figcaption class="case-study__caption">
-            Add a short caption for this screen or artifact.
+            Snapshot of the legacy maps-era experience—useful as a baseline for how
+            browse, pins, cards, and chrome coexisted before the redesign program
+            converged them.
           </figcaption>
         </figure>
 
-        <section class="case-study__section" aria-labelledby="cs-outcome">
-          <h2 id="cs-outcome">Outcome</h2>
+        <section class="case-study__section" aria-labelledby="maps-compete">
+          <h2 id="maps-compete">Competitive landscape</h2>
           <p>
-            What shipped, what changed for users or the business, and what you
-            learned. Use metrics only if you are allowed to share them.
+            We benchmarked how travelers learned map affordances elsewhere—pin
+            density, card peek vs full sheet, filter entry points, and how price
+            showed up at a glance. The goal was not to copy, but to align on
+            expectations so Agoda’s map felt familiar on day one while still
+            supporting Agoda-specific merchandising.
+          </p>
+        </section>
+
+        <figure class="case-study__figure">
+          <img
+            src="../assets/work/agoda-maps-app/Maps-competitors.png"
+            alt="Competitive benchmark: other travel and map products"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="case-study__caption">
+            Competitive scan—inputs into principles for pins, cards, and density on
+            small screens.
+          </figcaption>
+        </figure>
+
+        <section class="case-study__section" aria-labelledby="maps-research">
+          <h2 id="maps-research">Research and discoverability</h2>
+          <p>
+            Lab sessions and targeted interviews helped separate “map as
+            novelty” from “map as decision tool”: where people looked first, how
+            they compared two pins, and when they bounced back to list view. A
+            dedicated discoverability lens tracked whether primary actions were
+            visible during pan/zoom and in dense pin clusters.
           </p>
         </section>
 
         <div class="case-study__gallery case-study__gallery--two">
           <figure class="case-study__figure">
             <img
-              src="../assets/work/agoda-maps-app/gallery-02.jpg"
-              alt=""
+              src="../assets/work/agoda-maps-app/user-interview-lab.png"
+              alt="User research lab setup for maps usability sessions"
               width="800"
               height="600"
               loading="lazy"
               decoding="async"
             />
             <figcaption class="case-study__caption">
-              Optional caption for the second visual.
+              Lab-backed sessions to observe map-led search and card behavior in
+              realistic tasks.
             </figcaption>
           </figure>
           <figure class="case-study__figure">
             <img
-              src="../assets/work/agoda-maps-app/gallery-03.jpg"
-              alt=""
+              src="../assets/work/agoda-maps-app/Discoverability.png"
+              alt="Discoverability analysis for map controls and entry points"
               width="800"
               height="600"
               loading="lazy"
               decoding="async"
             />
             <figcaption class="case-study__caption">
-              Optional caption for the third visual.
+              Discoverability framing—where controls and next steps surfaced (or
+              disappeared) during map interaction.
             </figcaption>
           </figure>
         </div>
 
-        <aside class="case-study__callout" aria-label="Reflection">
+        <section class="case-study__section" aria-labelledby="maps-approach">
+          <h2 id="maps-approach">Approach</h2>
           <p>
-            Optional pull quote or key takeaway — something you want visitors
-            to remember.
+            We moved from insights into explicit hypotheses—each testable in
+            prototype or build—so debates became about evidence, not taste alone.
+            Directions covered price signaling on the map, filter parity with list
+            search, card ergonomics, and how much automation to introduce (for
+            example search-this-area vs manual control).
+          </p>
+          <ul>
+            <li>
+              <strong>Hypothesis-led UI.</strong> Articulated options as falsifiable
+              bets (clearer pins, richer cards, shared sort/filter language).
+            </li>
+            <li>
+              <strong>Iteration in the open.</strong> Named variants for critique and
+              usability so engineering could trace decisions to research IDs.
+            </li>
+            <li>
+              <strong>Motion as feedback.</strong> Reserved animation for spatial
+              continuity and confirmation—not decoration—across the shipped flows
+              below.
+            </li>
+          </ul>
+        </section>
+
+        <div class="case-study__gallery case-study__gallery--two">
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/hypothesis1.png"
+              alt="Design hypothesis artifact one"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Hypothesis exploration—early framing of map + list parity and
+              hierarchy.
+            </figcaption>
+          </figure>
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/hypothesis2.png"
+              alt="Design hypothesis artifact two"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Companion hypothesis board—trade-offs between density and legibility.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="case-study__gallery case-study__gallery--two">
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/hypothesis2-pricefilter.png"
+              alt="Hypothesis: price filter and map integration"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Price filter on the map—making “cheap near here” scannable without
+              breaking geographic context.
+            </figcaption>
+          </figure>
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/hypo3.png"
+              alt="Third hypothesis exploration"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Additional direction under test—kept in the same visual language so
+              sessions stayed comparable.
+            </figcaption>
+          </figure>
+        </div>
+
+        <section class="case-study__section" aria-labelledby="maps-tests">
+          <h2 id="maps-tests">Explorations and usability variants</h2>
+          <p>
+            We pressure-tested edge cases: crowded downtowns, low-contrast pins,
+            swipe-heavy cards vs static sheets, and whether “search this area”
+            should auto-run or stay explicit. Each variant went into research with
+            a clear success signal (task completion, comprehension, preference).
+          </p>
+        </section>
+
+        <div class="case-study__gallery case-study__gallery--two">
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/Test1.png"
+              alt="Usability test variant one"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Lab variant A—baseline for comparison across sessions.
+            </figcaption>
+          </figure>
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/test2.png"
+              alt="Usability test variant two"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Lab variant B—adjusted layout and card chrome after first-round
+              findings.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="case-study__gallery case-study__gallery--two">
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/Test%20swipeable%20card%20view%2C%20and%20%20distance%20info.png"
+              alt="Test: swipeable card view and distance information"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Swipeable card + distance cues—does motion help comparison or add
+              cognitive load?
+            </figcaption>
+          </figure>
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/Test%20reversed%20pin%20color%28improve%20contrast%29.png"
+              alt="Test: reversed pin colors for better contrast"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Pin contrast study—readability on satellite-style and light basemaps.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="case-study__gallery case-study__gallery--two">
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/Test%20shared%20sort%20%26%20filter%2C%20introduce%20price%20pin%2C%20favorites%20.png"
+              alt="Test: shared sort and filter, price pin, favorites"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Shared sort/filter with price-forward pins and favorites—keeping
+              parity with list search where it mattered most.
+            </figcaption>
+          </figure>
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/Test%20auto-populate%20resulte%20or%20manual%20%E2%80%9CSearch%20current%20area%E2%80%9C%20button%20%20.png"
+              alt="Test: auto-populate results versus manual search this area control"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Automation vs explicit “search this area”—balancing speed with user
+              control when the viewport jumps.
+            </figcaption>
+          </figure>
+        </div>
+
+        <section class="case-study__section" aria-labelledby="maps-before-after">
+          <h2 id="maps-before-after">Before and after</h2>
+          <p>
+            The program converged on a clearer map-first story: predictable pins,
+            cards that respect thumb reach, and filters that read as the same
+            system as list search. The composite below captures the shift in one
+            view for portfolio storytelling.
+          </p>
+        </section>
+
+        <figure class="case-study__figure">
+          <img
+            src="../assets/work/agoda-maps-app/Map-app-before-and-after%2BCopy.png"
+            alt="Agoda Maps app before and after the redesign"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="case-study__caption">
+            Before / after composite—density, hierarchy, and chrome brought in line
+            with the intended map-first narrative.
+          </figcaption>
+        </figure>
+
+        <section class="case-study__section" aria-labelledby="maps-pins">
+          <h2 id="maps-pins">Pins and cards</h2>
+          <p>
+            Pin states and card content were designed as one system: selecting a
+            pin had to feel continuous with the card that appears, with price and
+            distance legible at a glance and next steps obvious without covering
+            the map entirely.
+          </p>
+        </section>
+
+        <div class="case-study__gallery case-study__gallery--two">
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/pin%20info.png"
+              alt="Map pin information states"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Pin info states—selected vs default, and how price shows up without
+              crowding the basemap.
+            </figcaption>
+          </figure>
+          <figure class="case-study__figure">
+            <img
+              src="../assets/work/agoda-maps-app/pin%20and%20card%20interaction.png"
+              alt="Interaction between map pins and property cards"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="case-study__caption">
+              Pin ↔ card interaction—keeping spatial context while scrolling card
+              content.
+            </figcaption>
+          </figure>
+        </div>
+
+        <section class="case-study__section" aria-labelledby="maps-outcome">
+          <h2 id="maps-outcome">Outcome</h2>
+          <p>
+            The shipped experience tightened map-led discovery: clearer hierarchy
+            on the map, more honest contrast for pins, and filter/sort behavior that
+            matched traveler expectations from list search. Specific metrics stay
+            internal, but the north star was higher confidence in spatial decisions
+            and fewer dead ends when moving between map, cards, and booking paths.
+          </p>
+        </section>
+
+        <section class="case-study__section" aria-labelledby="maps-motion">
+          <h2 id="maps-motion">Motion in the shipped flows</h2>
+          <p>
+            These clips highlight transitions that survived research and build:
+            continuity when changing scope, feedback on pin selection, and motion
+            that reinforces—not obscures—geography.
+          </p>
+        </section>
+
+        <div
+          class="case-study__gif-strip"
+          role="group"
+          aria-labelledby="maps-motion"
+        >
+          <div class="case-study__gif-grid case-study__gif-grid--four">
+            <figure class="case-study__gif">
+              <img
+                src="../assets/work/agoda-maps-app/Feature1.gif"
+                alt="Maps app feature animation one"
+                width="400"
+                height="710"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Shipped flow: primary map interaction beat.
+              </figcaption>
+            </figure>
+            <figure class="case-study__gif">
+              <img
+                src="../assets/work/agoda-maps-app/feature2.gif"
+                alt="Maps app feature animation two"
+                width="400"
+                height="710"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Shipped flow: secondary transition and feedback.
+              </figcaption>
+            </figure>
+            <figure class="case-study__gif">
+              <img
+                src="../assets/work/agoda-maps-app/Feature3.gif"
+                alt="Maps app feature animation three"
+                width="400"
+                height="710"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Shipped flow: card or sheet motion tied to map context.
+              </figcaption>
+            </figure>
+            <figure class="case-study__gif">
+              <img
+                src="../assets/work/agoda-maps-app/Feature4.gif"
+                alt="Maps app feature animation four"
+                width="400"
+                height="710"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Shipped flow: additional continuity across search scope changes.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <aside class="case-study__callout" aria-label="Takeaway">
+          <p>
+            Map UX wins when pins, cards, and filters obey one story—otherwise
+            travelers trust the basemap and doubt the product on top of it.
           </p>
         </aside>
       </div>

@@ -99,6 +99,32 @@
   transform: scale(1.06);
 }
 
+.work-card__badge {
+  position: absolute;
+  top: clamp(0.65rem, 2vw, 0.85rem);
+  right: clamp(0.65rem, 2vw, 0.85rem);
+  z-index: 3;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.work-card--locked .work-card__media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.22);
+}
+
 .work-card__title {
   position: absolute;
   left: 0;

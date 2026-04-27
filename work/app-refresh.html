@@ -57,23 +57,32 @@
       <div class="case-study__intro">
         <h1 class="case-study__title">App Refresh</h1>
         <p class="case-study__lead">
-          Short summary of the problem, your role, and the outcome. Replace this
-          paragraph with your own one- to two-sentence project pitch.
+          In 2019, as Agoda grew quickly, the design organization was not yet set
+          up with a shared design language—so we could not reliably deliver a
+          cohesive experience to users. Many product managers were shipping
+          experiments and optimizations in parallel, and the app had become
+          disjointed in both UI and UX. We did not have a clear visual direction or
+          UI language as a team, so we took a deliberate leap: a major UI revamp and
+          the start of a systematic foundation.
         </p>
       </div>
 
       <ul class="case-study__meta">
         <li class="case-study__meta-item">
           <span class="case-study__meta-label">Role</span>
-          <p class="case-study__meta-value">Your role (e.g. Lead product designer)</p>
+          <p class="case-study__meta-value">Project lead</p>
         </li>
         <li class="case-study__meta-item">
-          <span class="case-study__meta-label">Focus</span>
-          <p class="case-study__meta-value">Team, product area, or scope</p>
+          <span class="case-study__meta-label">Team</span>
+          <p class="case-study__meta-value">
+            1 visual designer, 1 UX designer, 1 motion designer
+          </p>
         </li>
         <li class="case-study__meta-item">
           <span class="case-study__meta-label">Timeline</span>
-          <p class="case-study__meta-value">e.g. 2024 — 2025</p>
+          <p class="case-study__meta-value">
+            Design: Nov 2018 — Feb 2019 (3 months). Development from Feb 2019.
+          </p>
         </li>
       </ul>
 
@@ -89,82 +98,389 @@
       </div>
 
       <div class="case-study__content">
-        <section class="case-study__section" aria-labelledby="cs-context">
-          <h2 id="cs-context">Context</h2>
+        <section class="case-study__section" aria-labelledby="ar-background">
+          <h2 id="ar-background">Background</h2>
           <p>
-            Describe the business and user context: who this was for, what was
-            not working, and why the work mattered. Replace with your narrative.
-          </p>
-        </section>
-
-        <section class="case-study__section" aria-labelledby="cs-approach">
-          <h2 id="cs-approach">Approach</h2>
-          <p>
-            How you framed the problem, who you partnered with, and how you
-            moved from insight to solution. Add bullets or subsections as needed.
+            A high volume of experimentation ran without a design system in place.
+            The Agoda app had fragmented in both UI and UX.
           </p>
           <ul>
-            <li>Research or discovery highlight</li>
-            <li>Design exploration or principle</li>
-            <li>Validation or rollout note</li>
+            <li>
+              <strong>UX — filters.</strong> Filters did not carry over from search
+              results, breaking continuity in the journey.
+            </li>
+            <li>
+              <strong>UX — messaging.</strong> Patterns and tone were inconsistent
+              across surfaces.
+            </li>
+            <li>
+              <strong>UI — navigation.</strong> Three different navigation and header
+              treatments competed in the same product.
+            </li>
+            <li>
+              <strong>UI — color.</strong> Hundreds of color shades with no shared
+              rationale.
+            </li>
+            <li>
+              <strong>UI — controls.</strong> Buttons and text links did not share a
+              common system.
+            </li>
           </ul>
         </section>
 
         <figure class="case-study__figure">
           <img
-            src="../assets/work/app-refresh/gallery-01.jpg"
-            alt=""
+            src="../assets/work/app-refresh/2019-before-app-refresh.png"
+            alt="Agoda app UI before the 2019 refresh, showing fragmented patterns"
             width="1200"
             height="800"
             loading="lazy"
             decoding="async"
           />
           <figcaption class="case-study__caption">
-            Add a short caption for this screen or artifact.
+            Snapshot of the pre-refresh app: incremental releases had stacked
+            different visual and interaction languages in one experience.
           </figcaption>
         </figure>
 
-        <section class="case-study__section" aria-labelledby="cs-outcome">
-          <h2 id="cs-outcome">Outcome</h2>
+        <section class="case-study__section" aria-labelledby="ar-problems">
+          <h2 id="ar-problems">Key problems</h2>
+          <h3 id="ar-no-language">No defined language</h3>
           <p>
-            What shipped, what changed for users or the business, and what you
-            learned. Use metrics only if you are allowed to share them.
+            Without unified design language or guiding principles, the team lacked
+            a north star. Users had a harder time recognizing Agoda’s brand, which
+            weakened familiarity and loyalty.
+          </p>
+          <h3 id="ar-ab">A/B testing culture and velocity</h3>
+          <p>
+            A fragmented experimentation culture meant legacy and new visual
+            language often coexisted side by side.
+          </p>
+          <h3 id="ar-growth">Rapidly growing business</h3>
+          <p>
+            The product was expanding into multiple funnels (for example flights and
+            packages) quickly, which forced design trade-offs without a shared
+            foundation.
+          </p>
+        </section>
+
+        <section class="case-study__section" aria-labelledby="ar-process">
+          <h2 id="ar-process">Design process</h2>
+          <p>
+            Over the three-month design window (Nov 2018 — Feb 2019), visual, UX,
+            and motion worked in tight loops with product and engineering: audit
+            and inventory, directional explorations, convergence on principles and
+            components, then handoff into development starting Feb 2019.
+          </p>
+        </section>
+
+        <figure class="case-study__figure">
+          <img
+            src="../assets/work/app-refresh/design-process.png"
+            alt="Diagram or timeline of the app refresh design process"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="case-study__caption">
+            How the team sequenced discovery, alignment, and delivery—so the
+            refresh stayed one program, not a pile of unrelated screen updates.
+          </figcaption>
+        </figure>
+
+        <section class="case-study__section" aria-labelledby="ar-vision">
+          <h2 id="ar-vision">The vision</h2>
+          <p>
+            We set the bar explicitly: <strong>best converting, yet beautiful and
+            lovable</strong>—then worked backward into principles the whole team
+            could use. Workshops, audits, and trend scans helped align us on
+            hierarchy, clarity, and motion before we locked UI details.
+          </p>
+          <h3 id="ar-lang-trends">Design language trends</h3>
+          <p>
+            We also looked outward at where consumer and travel apps were
+            converging—stronger typographic systems, clearer affordances, and more
+            opinionated motion—so our direction felt current without chasing every
+            fad.
+          </p>
+        </section>
+
+        <figure class="case-study__figure">
+          <img
+            src="../assets/work/app-refresh/design-language-trends.png"
+            alt="Benchmarks and notes on design language trends in consumer apps"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="case-study__caption">
+            Trend and competitive scan: how peer products handled hierarchy,
+            density, and brand expression—inputs before we committed to our own
+            language.
+          </figcaption>
+        </figure>
+
+        <section
+          class="case-study__section"
+          aria-labelledby="ar-principles-define"
+        >
+          <h3 id="ar-principles-define">Defining design principles</h3>
+          <p>
+            We translated the vision into shared language—principles, examples,
+            and “good enough to ship” criteria—so experiments stayed on-brand and
+            the team could critique work against the same bar.
           </p>
         </section>
 
         <div class="case-study__gallery case-study__gallery--two">
           <figure class="case-study__figure">
             <img
-              src="../assets/work/app-refresh/gallery-02.jpg"
-              alt=""
+              src="../assets/work/app-refresh/design-principles-define-01.png"
+              alt="Workshop or artifact: articulating design principles"
               width="800"
               height="600"
               loading="lazy"
               decoding="async"
             />
             <figcaption class="case-study__caption">
-              Optional caption for the second visual.
+              Early articulation of principles—how we named trade-offs and what
+              “lovable” meant in measurable terms for product and design.
             </figcaption>
           </figure>
           <figure class="case-study__figure">
             <img
-              src="../assets/work/app-refresh/gallery-03.jpg"
-              alt=""
+              src="../assets/work/app-refresh/design-principles-define-02.png"
+              alt="Documentation or alignment session on design principles"
               width="800"
               height="600"
               loading="lazy"
               decoding="async"
             />
             <figcaption class="case-study__caption">
-              Optional caption for the third visual.
+              Alignment artifacts the team reused—so visual, UX, and motion stayed
+              pointed at one story as execution ramped.
             </figcaption>
           </figure>
         </div>
 
-        <aside class="case-study__callout" aria-label="Reflection">
+        <section class="case-study__section" aria-labelledby="ar-core-pages">
+          <h2 id="ar-core-pages">Redesigning core pages</h2>
           <p>
-            Optional pull quote or key takeaway — something you want visitors
-            to remember.
+            Home, search, and key decision surfaces were redesigned together—not as
+            one-off comps—so navigation, density, and component usage matched the
+            new language before we scaled to the long tail of screens.
+          </p>
+        </section>
+
+        <figure class="case-study__figure">
+          <img
+            src="../assets/work/app-refresh/core-page-redesign.png"
+            alt="Refreshed core page: layout, hierarchy, and components"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="case-study__caption">
+            A representative core page after the refresh—showing how typography,
+            spacing, and modules hung off the same grid and rules as the rest of
+            the app.
+          </figcaption>
+        </figure>
+
+        <section class="case-study__section" aria-labelledby="ar-motion">
+          <h2 id="ar-motion">Animation and transitions</h2>
+          <p>
+            Motion became part of the language—not decoration—so tab changes,
+            splash, map-led search, and filter flows felt intentional and on-brand.
+          </p>
+        </section>
+
+        <div
+          class="case-study__gif-strip"
+          role="group"
+          aria-labelledby="ar-motion"
+        >
+          <div class="case-study__gif-grid case-study__gif-grid--four">
+            <figure class="case-study__gif">
+              <img
+                src="../assets/work/app-refresh/Home-SplashScreen_1.gif"
+                alt="Animation: home splash screen"
+                width="400"
+                height="710"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Splash into home—first beat of the refreshed entry experience.
+              </figcaption>
+            </figure>
+            <figure class="case-study__gif">
+              <img
+                src="../assets/work/app-refresh/Home-Tab_2.gif"
+                alt="Animation: home tab transitions"
+                width="400"
+                height="710"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Tab transitions tuned so primary navigation reads as one system.
+              </figcaption>
+            </figure>
+            <figure class="case-study__gif">
+              <img
+                src="../assets/work/app-refresh/Search-Map.gif"
+                alt="Animation: search with map"
+                width="400"
+                height="710"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Search with map—motion supporting spatial context without fighting
+                the UI chrome.
+              </figcaption>
+            </figure>
+            <figure class="case-study__gif">
+              <img
+                src="../assets/work/app-refresh/Filter-page-transition.gif"
+                alt="Animation: filter page transition"
+                width="400"
+                height="710"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="case-study__caption">
+                Filter page transition—continuity when moving into and out of
+                filters so the handoff matches search and results.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <section class="case-study__section" aria-labelledby="ar-design-system">
+          <h2 id="ar-design-system">Defining the design system</h2>
+          <p>
+            Principles turned into something buildable: naming, tokens, component
+            anatomy, and variant rules so design and engineering could ship the
+            same thing—foundation for the 46 components and the adoption story
+            that followed.
+          </p>
+        </section>
+
+        <figure class="case-study__figure">
+          <img
+            src="../assets/work/app-refresh/design-system-define.png"
+            alt="Design system documentation: components, tokens, or library structure"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="case-study__caption">
+            System definition work—how we structured the library so core pages
+            could reuse patterns and devs could map cleanly to code.
+          </figcaption>
+        </figure>
+
+        <section class="case-study__section" aria-labelledby="ar-outcome">
+          <h2 id="ar-outcome">Outcome</h2>
+          <h3 id="ar-velocity">Velocity on product expansion</h3>
+          <p>
+            We launched the homepage redesign and kept pushing code and design
+            adoption. The rebrand created room to expand into new product lines
+            without starting from zero every time.
+          </p>
+          <h3 id="ar-reuse">Reusability and scalability for design and dev</h3>
+          <p>
+            We built the business case and secured funding for a UI engineering
+            team. Advocating for system thinking and design systems gave tech a
+            path to save cost and improve efficiency through a reusable component
+            library.
+          </p>
+          <h3 id="ar-brand">Agoda branding for users</h3>
+          <p>
+            A tight palette—<strong>five colors</strong> as the design
+            language—helped differentiate benefits, messaging, and system intent
+            without visual noise.
+          </p>
+          <p>
+            The component set scaled: <strong>46 unique components (1,105
+            variants)</strong> covered roughly <strong>80% of core pages</strong>.
+          </p>
+        </section>
+
+        <figure class="case-study__figure">
+          <img
+            src="../assets/work/app-refresh/Dev-code-coverage.png"
+            alt="Chart: developer code coverage from design system components, Aug 2019 to Jan 2021"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption class="case-study__caption">
+            Developer code coverage (Aug 2019 — Jan 2021) as adoption of shared
+            UI grew.
+          </figcaption>
+        </figure>
+
+        <section class="case-study__section" aria-labelledby="ar-milestones">
+          <h2 id="ar-milestones">Key milestones</h2>
+          <ul>
+            <li>
+              <strong>2019 Q3</strong> — Launched homepage refresh.
+            </li>
+            <li>
+              <strong>2019 Q4 — 2020 Q2</strong> — Drove overall code and design
+              adoption to about 40%.
+            </li>
+            <li>
+              <strong>2020 Q3 onward</strong> — Shifted focus to core pages;
+              pushed adoption toward about 80%.
+            </li>
+            <li>
+              <strong>2020</strong> — Roughly 2× dev and design velocity; framework
+              readiness to about 90%; design adoption up to about 95%; shipped a
+              white-label solution with a product launch.
+            </li>
+          </ul>
+        </section>
+
+        <section class="case-study__section" aria-labelledby="ar-platform">
+          <h2 id="ar-platform">How this led to the UX platform team</h2>
+          <p>
+            The harder work started after the pixels shipped: how might we socialize
+            and advocate for the new design language? How might we accelerate
+            adoption, teach designers the system—components, libraries, patterns—and
+            shift mindsets from one-off craft toward systematic, holistic thinking?
+          </p>
+          <p>
+            That problem space is what pulled me toward building the UX platform
+            capability—connecting language, tooling, and education so the
+            organization could scale what we had proven with the refresh.
+          </p>
+          <p>
+            If you are interested in more detail on how I led that adoption and
+            platform chapter—socializing the language, scaling the library, and
+            shifting designers toward systematic thinking—reach out on
+            <a
+              href="https://www.linkedin.com/in/liya-li/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >.
+          </p>
+        </section>
+
+        <aside class="case-study__callout" aria-label="Takeaway">
+          <p>
+            A refresh only sticks when it is paired with adoption mechanics—funding,
+            components, and a team willing to treat the language as infrastructure,
+            not a one-time style pass.
           </p>
         </aside>
       </div>

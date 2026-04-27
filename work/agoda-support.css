@@ -1,0 +1,113 @@
+/* Password gate for Post Booking Support case study */
+
+.support-gate {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  background: #000000;
+}
+
+.support-gate--overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  min-height: 100dvh;
+}
+
+.support-gate__panel {
+  width: 100%;
+  max-width: 22rem;
+  padding: clamp(1.5rem, 4vw, 2rem);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.support-gate__title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.125rem, 3vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.support-gate__subtitle {
+  margin: 0 0 1.25rem;
+  font-size: 0.875rem;
+  color: #a0a0a0;
+  line-height: 1.5;
+}
+
+.support-gate__label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #707070;
+  margin-bottom: 0.35rem;
+}
+
+.support-gate__input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 1rem;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  font-size: 0.9375rem;
+  color: #ffffff;
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+.support-gate__input:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.45);
+  outline-offset: 2px;
+}
+
+.support-gate__submit {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #000000;
+  background: #ffffff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.support-gate__submit:hover {
+  background: #e0e0e0;
+}
+
+.support-gate__error {
+  margin: 0.75rem 0 0;
+  font-size: 0.8125rem;
+  color: #ff8a8a;
+  min-height: 1.25rem;
+}
+
+.support-gate__back {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.support-gate__back:hover {
+  color: #ffffff;
+}
+
+.support-gate__note {
+  margin: 1rem 0 0;
+  font-size: 0.75rem;
+  color: #606060;
+  line-height: 1.45;
+}
