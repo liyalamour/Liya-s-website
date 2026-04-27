@@ -114,6 +114,18 @@
   color: #ffffff;
 }
 
+.case-study__section h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.case-study__section h3:first-child {
+  margin-top: 0;
+}
+
 .case-study__section p {
   margin: 0 0 1rem;
   font-size: 1rem;
